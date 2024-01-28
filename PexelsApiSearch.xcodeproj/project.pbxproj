@@ -16,6 +16,16 @@
 		BFB691142B63B2FC005AA2DA /* PexelsApiSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB691132B63B2FC005AA2DA /* PexelsApiSearchTests.swift */; };
 		BFB6911E2B63B2FC005AA2DA /* PexelsApiSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6911D2B63B2FC005AA2DA /* PexelsApiSearchUITests.swift */; };
 		BFB691202B63B2FC005AA2DA /* PexelsApiSearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6911F2B63B2FC005AA2DA /* PexelsApiSearchUITestsLaunchTests.swift */; };
+		BFB6912F2B63BCFD005AA2DA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BFB6912E2B63BCFD005AA2DA /* Alamofire */; };
+		BFB691322B63BD08005AA2DA /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BFB691312B63BD08005AA2DA /* RxAlamofire */; };
+		BFB691362B63BF84005AA2DA /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = BFB691352B63BF84005AA2DA /* SDWebImage */; };
+		BFB6913C2B63C05B005AA2DA /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6913B2B63C05B005AA2DA /* PreviewViewController.swift */; };
+		BFB6913E2B63C081005AA2DA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6913D2B63C081005AA2DA /* CollectionViewCell.swift */; };
+		BFB691412B63C0B1005AA2DA /* ApiConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB691402B63C0B1005AA2DA /* ApiConnector.swift */; };
+		BFB691442B63C0E0005AA2DA /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB691432B63C0E0005AA2DA /* Photo.swift */; };
+		BFB691472B63C105005AA2DA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB691462B63C105005AA2DA /* Extensions.swift */; };
+		BFB6914A2B63C37A005AA2DA /* PreviewViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB691492B63C37A005AA2DA /* PreviewViewControllerViewModel.swift */; };
+		BFB6914D2B64DBB2005AA2DA /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6914C2B64DBB2005AA2DA /* ViewControllerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,13 @@
 		BFB691192B63B2FC005AA2DA /* PexelsApiSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PexelsApiSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB6911D2B63B2FC005AA2DA /* PexelsApiSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelsApiSearchUITests.swift; sourceTree = "<group>"; };
 		BFB6911F2B63B2FC005AA2DA /* PexelsApiSearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelsApiSearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BFB6913B2B63C05B005AA2DA /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		BFB6913D2B63C081005AA2DA /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		BFB691402B63C0B1005AA2DA /* ApiConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConnector.swift; sourceTree = "<group>"; };
+		BFB691432B63C0E0005AA2DA /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		BFB691462B63C105005AA2DA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BFB691492B63C37A005AA2DA /* PreviewViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewControllerViewModel.swift; sourceTree = "<group>"; };
+		BFB6914C2B64DBB2005AA2DA /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB691362B63BF84005AA2DA /* SDWebImage in Frameworks */,
+				BFB6912F2B63BCFD005AA2DA /* Alamofire in Frameworks */,
+				BFB691322B63BD08005AA2DA /* RxAlamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +103,7 @@
 				BFB691122B63B2FC005AA2DA /* PexelsApiSearchTests */,
 				BFB6911C2B63B2FC005AA2DA /* PexelsApiSearchUITests */,
 				BFB690FA2B63B2FB005AA2DA /* Products */,
+				BFB691342B63BF84005AA2DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +120,14 @@
 		BFB690FB2B63B2FB005AA2DA /* PexelsApiSearch */ = {
 			isa = PBXGroup;
 			children = (
+				BFB691452B63C0FD005AA2DA /* Extensions */,
+				BFB691422B63C0D4005AA2DA /* Model */,
+				BFB6913F2B63C095005AA2DA /* Api */,
+				BFB691372B63BFAE005AA2DA /* Views */,
+				BFB691332B63BF54005AA2DA /* ViewControllers + ViewModels */,
 				BFB690FC2B63B2FB005AA2DA /* AppDelegate.swift */,
 				BFB690FE2B63B2FB005AA2DA /* SceneDelegate.swift */,
-				BFB691002B63B2FB005AA2DA /* ViewController.swift */,
-				BFB691022B63B2FB005AA2DA /* Main.storyboard */,
 				BFB691052B63B2FC005AA2DA /* Assets.xcassets */,
-				BFB691072B63B2FC005AA2DA /* LaunchScreen.storyboard */,
 				BFB6910A2B63B2FC005AA2DA /* Info.plist */,
 			);
 			path = PexelsApiSearch;
@@ -127,6 +150,74 @@
 			path = PexelsApiSearchUITests;
 			sourceTree = "<group>";
 		};
+		BFB691332B63BF54005AA2DA /* ViewControllers + ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BFB6914B2B64DB94005AA2DA /* ViewController */,
+				BFB691482B63C364005AA2DA /* PreviewViewController */,
+			);
+			path = "ViewControllers + ViewModels";
+			sourceTree = "<group>";
+		};
+		BFB691342B63BF84005AA2DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFB691372B63BFAE005AA2DA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BFB691022B63B2FB005AA2DA /* Main.storyboard */,
+				BFB691072B63B2FC005AA2DA /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BFB6913F2B63C095005AA2DA /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				BFB691402B63C0B1005AA2DA /* ApiConnector.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		BFB691422B63C0D4005AA2DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFB691432B63C0E0005AA2DA /* Photo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFB691452B63C0FD005AA2DA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BFB691462B63C105005AA2DA /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BFB691482B63C364005AA2DA /* PreviewViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BFB6913B2B63C05B005AA2DA /* PreviewViewController.swift */,
+				BFB691492B63C37A005AA2DA /* PreviewViewControllerViewModel.swift */,
+			);
+			path = PreviewViewController;
+			sourceTree = "<group>";
+		};
+		BFB6914B2B64DB94005AA2DA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BFB691002B63B2FB005AA2DA /* ViewController.swift */,
+				BFB6914C2B64DBB2005AA2DA /* ViewControllerViewModel.swift */,
+				BFB6913D2B63C081005AA2DA /* CollectionViewCell.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +234,11 @@
 			dependencies = (
 			);
 			name = PexelsApiSearch;
+			packageProductDependencies = (
+				BFB6912E2B63BCFD005AA2DA /* Alamofire */,
+				BFB691312B63BD08005AA2DA /* RxAlamofire */,
+				BFB691352B63BF84005AA2DA /* SDWebImage */,
+			);
 			productName = PexelsApiSearch;
 			productReference = BFB690F92B63B2FB005AA2DA /* PexelsApiSearch.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +311,11 @@
 				Base,
 			);
 			mainGroup = BFB690F02B63B2FB005AA2DA;
+			packageReferences = (
+				BFB6912C2B63BCF2005AA2DA /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				BFB6912D2B63BCFD005AA2DA /* XCRemoteSwiftPackageReference "Alamofire" */,
+				BFB691302B63BD08005AA2DA /* XCRemoteSwiftPackageReference "RxAlamofire" */,
+			);
 			productRefGroup = BFB690FA2B63B2FB005AA2DA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +359,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB691442B63C0E0005AA2DA /* Photo.swift in Sources */,
+				BFB6914A2B63C37A005AA2DA /* PreviewViewControllerViewModel.swift in Sources */,
 				BFB691012B63B2FB005AA2DA /* ViewController.swift in Sources */,
 				BFB690FD2B63B2FB005AA2DA /* AppDelegate.swift in Sources */,
+				BFB691472B63C105005AA2DA /* Extensions.swift in Sources */,
 				BFB690FF2B63B2FB005AA2DA /* SceneDelegate.swift in Sources */,
+				BFB6913C2B63C05B005AA2DA /* PreviewViewController.swift in Sources */,
+				BFB6914D2B64DBB2005AA2DA /* ViewControllerViewModel.swift in Sources */,
+				BFB691412B63C0B1005AA2DA /* ApiConnector.swift in Sources */,
+				BFB6913E2B63C081005AA2DA /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +476,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -425,7 +533,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -447,8 +555,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,9 +564,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jack.PexelsApiSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -474,8 +585,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -483,9 +594,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jack.PexelsApiSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -601,6 +715,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BFB6912C2B63BCF2005AA2DA /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.18.10;
+			};
+		};
+		BFB6912D2B63BCFD005AA2DA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+		BFB691302B63BD08005AA2DA /* XCRemoteSwiftPackageReference "RxAlamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxAlamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BFB6912E2B63BCFD005AA2DA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFB6912D2B63BCFD005AA2DA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		BFB691312B63BD08005AA2DA /* RxAlamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFB691302B63BD08005AA2DA /* XCRemoteSwiftPackageReference "RxAlamofire" */;
+			productName = RxAlamofire;
+		};
+		BFB691352B63BF84005AA2DA /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFB6912C2B63BCF2005AA2DA /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BFB690F12B63B2FB005AA2DA /* Project object */;
 }
